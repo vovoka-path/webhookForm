@@ -16,7 +16,7 @@ $db = new Medoo([
  
 ]);
 
-// Форматирование данных для БД
+// Format data for mySQL
 
 $request_date = date('Y-m-d');
 $time = date('H:i:s');
@@ -27,7 +27,7 @@ $package1 = htmlspecialchars($_POST['Пакет']);
 $email = htmlspecialchars($_POST['Email']);
 $message = htmlspecialchars($_POST['Сообщение']);
 
-// Запись в mySQL
+// Make record in mySQL table
 
 $table = 'php';
 
