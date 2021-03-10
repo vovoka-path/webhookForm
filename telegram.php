@@ -1,30 +1,31 @@
 <?php
 
-//В переменную $token нужно вставить токен, который нам прислал @botFather
-//(инструкция: https://junnot.info/otpravka-dannyih-v-telegram/)
+// In the $token variable, you need to insert the token that @botFather sent us
+
 $token = "token";
 
-//Сюда вставляем chat_id
-$chat_id = "-chat_id";
+// Insert chat_id here (with "-")
 
-/* Поля формы на сайте:
+$chat_id = "chat_id";
 
-1. Фото-маршрут
-2. Пакет
+/* Form fields on the site:
+
+1. Itinerary
+2. Package
 3. Email
-4. Сообщение
+4. Message
 
 */
 
-//Формируем сообщение для Telegram в переменной $txt:
+// Forming a message for Telegram in a variable $txt:
 
-$txt = htmlspecialchars($_POST['Фото-маршрут']) . "%0A";
-$txt .= "%0A" . htmlspecialchars($_POST['Пакет']) . "%0A";
+$txt = htmlspecialchars($_POST['Itinerary']) . "%0A";
+$txt .= "%0A" . htmlspecialchars($_POST['Package']) . "%0A";
 $txt .= "%0A" . htmlspecialchars($_POST['Email']) . "%0A";
-$txt .= "%0A" . "<b>" . "Сообщение: ". "%0A %0A" . "</b>" . htmlspecialchars($_POST['Сообщение']) . "%0A";
-$txt .= "%0A" . "cyp.photo" . "%0A" . " · · · · · · · · · · · · · · · · · ·" . "%0A" . "CRM: linkCRM"; // linkCRM - ссылка для быстрого перехода на карточку заказа в CRM
+$txt .= "%0A" . "<b>" . "Сообщение: ". "%0A %0A" . "</b>" . htmlspecialchars($_POST['Message']) . "%0A";
+$txt .= "%0A" . "cyp.photo" . "%0A" . " · · · · · · · · · · · · · · · · · ·" . "%0A" . "CRM: linkCRM"; // linkCRM - link for quick transition to the order card in CRM
 
-//Передаем данные боту
+// Send data to the telegram bot
     $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
     
 ?>
