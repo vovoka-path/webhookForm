@@ -8,10 +8,10 @@ use Medoo\Medoo;
 $db = new Medoo([
  
  'database_type'=>'mysql',
- 'database_name'=>'vh131491_clientscyp',
- 'server'=>'185.154.54.6',
- 'username'=>'vh131491_vovoka',
- 'password'=>'tK8kS9dY5jcM4t',
+ 'database_name'=>'database_name',
+ 'server'=>'server',
+ 'username'=>'username',
+ 'password'=>'password',
  'charset'=>'utf8',
  
 ]);
