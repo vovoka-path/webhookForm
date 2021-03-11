@@ -8,15 +8,6 @@ $token = "token";
 
 $chat_id = "chat_id";
 
-/* Form fields on the site:
-
-1. Itinerary
-2. Package
-3. Email
-4. Message
-
-*/
-
 // Forming a message for Telegram in a variable $txt:
 
 $txt = htmlspecialchars($_POST['Itinerary']) . "%0A";
@@ -28,4 +19,13 @@ $txt .= "%0A" . "cyp.photo" . "%0A" . " · · · · · · · · · · · · · �
 // Send data to the telegram bot
     $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
     
+/* Form fields on the site:
+
+1. Itinerary
+2. Package
+3. Email
+4. Message
+
+*/
+
 ?>
