@@ -1,9 +1,9 @@
 <?php
 
 // Submit form data to Telegram using bot
-include 'telegram.php';
+include 'webhookForm/telegram.php';
 
 // Make record in mySQL table using Medoo
-include 'recordDB.php';
+include 'webhookForm/recordDB.php';
 
 ?>
