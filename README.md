@@ -8,13 +8,13 @@ Submit form data to Telegram using bot and make record in mySQL table using Medo
 
 ## How to use
 
-1. Get a **TOKEN** from @botFather and find out your **chat ID**.
-2. Into a file **telegram.php**: format message from the form data and insert TOKEN, chat ID.
-3. Into a file **recordDB.php**: add your database connection data and define your variables from the form.
+1. Get a **TOKEN** from @botFather and your **chat ID**.
+2. Into a file **telegram.php**. Format message from the form data and insert: *TOKEN, chat ID*.
+3. Into a file **recordDB.php**. Add your *database connection data* and define *your variables* from the form.
 
 ## Reason for creation
 
-Add a quick telegram alert to the application form on the website and record data in mySQL with protection against SQL injection.
+Add a quick **telegram alert** to the application form on the website and record data in mySQL with protection **against SQL injection**.
 
 ## What I have learned
 
