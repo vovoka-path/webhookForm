@@ -1,4 +1,4 @@
-> **I'm looking for a job in Minsk, Belarus. My name is Vladimir Polansky.**
+> **My name is Vladimir Polansky. My CV: <a href="https://vovoka.space/">vovoka.space</a>**
 
 # webhookForm
 
